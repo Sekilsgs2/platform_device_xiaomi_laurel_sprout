@@ -105,7 +105,6 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
-    mRealBr = get(BRIGHTNESS_PATH, 0);
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     return Void();
 }
